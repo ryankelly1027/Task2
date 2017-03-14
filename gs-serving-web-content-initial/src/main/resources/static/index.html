@@ -7,10 +7,10 @@
 <body>
 	<script>
 		function myFunction() {
-			var y = document.getElementById("firstNumber").value;
-			var z = document.getElementById("secondNumber").value;
-			var x = +y + +z;
-			document.getElementById("output").innerHTML = x;
+			var y = parseInt(document.getElementById("firstNumber").value);
+			var z = parseInt(document.getElementById("secondNumber").value);
+			var x = y + z;
+			document.getElementById("output").value = x;
 		}
 	</script>
     <p>Get your greeting <a href="/greeting">here</a></p>
@@ -22,6 +22,6 @@
 	<p>
 		<button onclick="myFunction()">Add</button>
 	</p>
-	<label for="output"> The sum is: </label><input type="textbox" id="output" name="output">
+	<label for="output"> The sum is: </label><input type="text" id="output" name="output">
 </body>
 </html>
