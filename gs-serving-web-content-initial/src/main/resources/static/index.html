@@ -14,11 +14,12 @@
 		}
 	</script>
     <p>Get your greeting <a href="/greeting">here</a></p>
-	<p>
+	<form method = "POST" action = "/greeting">
 		Enter two numbers you want to add together: <br>
-		<input type="number" id="firstNumber" name="firstNumber">
-		<input type="number" id="secondNumber" name="secondNumber">
-	</p>
+		<input type="number" id="firstNumber" name="firstNumber" path="num2">
+		<input type="number" id="secondNumber" name="secondNumber" path="num1">
+		<input type = "submit" value = "Submit"/>
+	</form>
 	<p>
 		<button onclick="myFunction()">Add</button>
 	</p>
