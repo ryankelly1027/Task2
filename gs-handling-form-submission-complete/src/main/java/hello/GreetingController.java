@@ -11,12 +11,12 @@ public class GreetingController {
 
     @GetMapping("/greeting")
     public String greetingForm(Model model) {
-        model.addAttribute("numbers", new Numbers());
-        return "numbers";
+        model.addAttribute("greeting", new Numbers());
+        return "greeting";
     }
 
     @PostMapping("/greeting")
-    public String greetingSubmit(@ModelAttribute Numbers numbers) {
+    public String greetingSubmit(@ModelAttribute Numbers greeting) {
         return "result";
     }
 

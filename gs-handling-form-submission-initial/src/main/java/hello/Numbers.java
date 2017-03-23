@@ -2,27 +2,26 @@ package hello;
 
 public class Numbers {
 
-	private int num1;
-	private int num2;
+	private long num1;
+	private long num2;
 	
-	public int getNum1()
+	public long getNum1()
 	{
 		return num1;
 	}
 	
-	public void setNum1(int num1)
+	public void setNum1(long num1)
 	{
 		this.num1 = num1;
 	}
 	
-	public int getNum2()
+	public long getNum2()
 	{
 		return num2;
 	}
 	
-	public void setNum2(int num2)
+	public void setNum2(long num2)
 	{
 		this.num2 = num2;
 	}
-	
 }
