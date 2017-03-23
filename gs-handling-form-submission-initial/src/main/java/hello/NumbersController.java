@@ -16,7 +16,7 @@ public class NumbersController {
 	}
 	
 	@PostMapping("/numbers")
-	public String greetingSubmit(@ModelAttribute Numbers numbers) {
+	public String numbersSubmit(@ModelAttribute Numbers numbers) {
 		return "result";
 	}
 }
