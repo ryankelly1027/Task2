@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<script>
+		function myFunction() {
+			var y = parseInt(document.getElementById("firstNumber").value);
+			var z = parseInt(document.getElementById("secondNumber").value);
+			var x = y + z;
+			document.getElementById("output").value = x;
+		}
+	</script>
+    <p>Get your greeting <a href="/greeting">here</a></p>
+	<form method = "POST" action = "/greeting">
+		Enter two numbers you want to add together: <br>
+		<input type="number" id="firstNumber" name="firstNumber" path="num2">
+		<input type="number" id="secondNumber" name="secondNumber" path="num1">
+		<input type = "submit" value = "Submit"/>
+	</form>
+	<p>
+		<button onclick="myFunction()">Add</button>
+	</p>
+	<label for="output"> The sum is: </label><input type="text" id="output" name="output">
+</body>
+</html>

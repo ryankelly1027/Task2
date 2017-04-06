@@ -4,6 +4,7 @@ public class Numbers {
 
 	private long num1;
 	private long num2;
+	private long sum;
 	
 	public long getNum1()
 	{
@@ -23,5 +24,10 @@ public class Numbers {
 	public void setNum2(long num2)
 	{
 		this.num2 = num2;
+	}
+	
+	public void setSum()
+	{
+		this.sum = this.num1 + this.num2;
 	}
 }
