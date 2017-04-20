@@ -17,15 +17,6 @@ public class NumbersController {
 	
 	@PostMapping("/numbers")
 	public String numbersSubmit(@ModelAttribute Numbers numbers) {
-		
-		
-		numbers.setNum1(5);
-		numbers.setNum2(5);
 		return "result";
-	}
-	
-	@GetMapping("/result")
-	public void getSum(Model model) {
-		
 	}
 }
